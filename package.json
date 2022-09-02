@@ -29,8 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set \"GENERATE_SOURCEMAP=false\" &&react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "node --max_old_space_size=2560 node_modules/.bin/ set \"GENERATE_SOURCEMAP=false\" && react-app-rewired start",
+    "build": "node --max_old_space_size=2560 node_modules/.bin/react-app-rewired build",
     "test": "",
     "eject": "react-app-rewired eject"
   },
